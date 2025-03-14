@@ -140,7 +140,9 @@ export default function About() {
             className="mt-8"
           >
             <a
-              href="#"
+              href="/transport-details.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-md font-semibold text-white bg-gradient-to-r from-blue-500 to-teal-400 rounded-lg shadow-lg hover:from-teal-400 hover:to-blue-500 transition-all dark:from-teal-400 dark:to-blue-500 dark:hover:from-blue-500 dark:hover:to-teal-400 font-serif"
             >
               Transport Details

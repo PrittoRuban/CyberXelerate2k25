@@ -6,6 +6,7 @@ import ThemeSwitch from "@/components/ui/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Analytics } from "@vercel/analytics/react";
+import RegClosed from "@/components/RegClosed";
 
 // Custom fonts
 const soloLevelingFont = localFont({
@@ -55,6 +56,10 @@ export default function RootLayout({ children }) {
           <div className="bg-[#dbd7fb] absolute top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-transparent" />
         </div>
 
+        <div className="fixed top-0 left-0 right-0 z-10 py-10">
+          <RegClosed />
+        </div>
+
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <div className="w-full h-full absolute -z-20">
@@ -71,7 +76,9 @@ export default function RootLayout({ children }) {
             <main className="relative min-h-screen flex flex-col">
               {children}
               <Analytics />
-              <ThemeSwitch />
+              <div className="z-20">
+                <ThemeSwitch />
+              </div>
             </main>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
