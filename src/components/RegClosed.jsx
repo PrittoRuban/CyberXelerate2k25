@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const RegClosed = () => {
   return (
-    <div className="flex justify-center items-center h-screen px-10">
-      <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[30rem] w-[50.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#423d3d]"></div>
-      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-25rem] h-[30rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-      <div className="relative p-16 border-8 border-gray-200 dark:border-gray-600 shadow-2xl animate-swing-bounce rounded-lg backdrop-blur-3xl bg-white dark:bg-gray-800">
+    <div className="flex justify-center items-center h-screen px-10 bg-opacity-50 backdrop-blur-sm">
+      {/* <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[30rem] w-[50.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#423d3d]"></div>
+      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-25rem] h-[30rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div> */}
+      <div className="relative p-16 border-8 border-gray-200 dark:border-gray-600 shadow-2xl animate-swing-bounce rounded-lg backdrop-blur-3xl bg-white dark:bg-gray-800 ">
         <div className="absolute w-8 h-8 border border-gray-400 dark:border-gray-500 top-[-16px] left-1/2 transform -translate-x-1/2 rotate-45 border-b-0 border-r-0"></div>
         <div className="absolute w-4 h-4 bg-black dark:bg-white rounded-full top-[-20px] left-1/2 transform -translate-x-1/2"></div>
         <div className="text-center">
